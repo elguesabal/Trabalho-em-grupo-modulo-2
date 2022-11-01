@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+#id1 {
+    width: 500px;
+    margin: 0px 0px 30px 0px;
+    background-color: blue;
+}
+#id2 {
+    width: 500px;
+    margin: 30px 0px 0px 0px;
+    background-color: blue;
+}
