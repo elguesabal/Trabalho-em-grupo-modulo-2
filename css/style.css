@@ -1,14 +1,55 @@
 body {
-    background-color: black;
+    background-color: #1B2B40;
 }
 
-#id1 {
-    width: 500px;
-    margin: 0px 0px 30px 0px;
-    background-color: blue;
+#cabecalho {
+    z-index: 100;
+    background-color: #274259;
+    height: 10%;
+    width: 99%;
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px #2ECEF2;
+    position: absolute;
+    top: 0px
 }
-#id2 {
-    width: 500px;
-    margin: 30px 0px 0px 0px;
-    background-color: blue;
+
+li {
+    color: rgb(255, 255, 255);
+
+    display: inline-block;
+    margin: 0% 5% 0% 0%;
 }
+
+li:hover {
+    background-color: #27F2F2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+ul {
+    margin-left: 50%;
+}
+
+
+
+p {margin-top: 10%;
+text-align: right;}
+
+
+
+
+
+
+
+
+
+
+/* PALHETA DE CORES */
+
+/*
+#1B2B40
+#274259
+#2ECEF2
+#27F2F2
+#22F2DD
+*/
