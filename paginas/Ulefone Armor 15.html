@@ -12,6 +12,19 @@
         color:  rgb(100, 100, 100);
         cursor: pointer;
       }
+      .navbar{
+        /* background-color: rgba(90, 93, 105, 0.5);*/
+        background-color: rgba(10, 110, 146, 0.66);
+      }
+      .container {
+        background-color: rgba(10, 110, 146, 0.66);
+      }
+      .navbar-brand {
+        color: red;
+      }
+      body {
+        background-color: #06181f;
+      }
     </style>
     <script>
       function coracao() {
@@ -23,11 +36,61 @@
 <body>
 
   <header>
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> FrontEnders</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> FrontEnders</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nossos produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O que é certificaçãp IP68 e IP69K?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O que é certificação Militar MIL-STD 810G?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Marcas:
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">AGM</a></li>
+                  <li><a class="dropdown-item" href="#Blackview">Blackview</a></li>
+                  <li><a class="dropdown-item" href="#Doogee">Doogee</a></li>
+                  <li><a class="dropdown-item" href="#">Hotwav</a></li>
+                  <li><a class="dropdown-item" href="#">Ulefone</a></li>
+                  <li><a class="dropdown-item" href="#">Umidigi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
 
   </header>
 
   <section>
-    <div class="card mb-3" style="width: 90%; margin: 3% 0% 3% 5%">
+    <div class="card mb- container-sm pt-5" style="width: 90%; margin: 3% 0% 3% 5%">
       <div class="row g-0">
         <div class="col-md-4">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -133,7 +196,7 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: white; opacity: .5;">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: white; opacity: .5;">
             Ulefone Armor 15
           </button>
         </h2>
@@ -148,7 +211,7 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
             Introdução
           </button>
         </h2>
@@ -174,7 +237,7 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="color: white; opacity: .5;">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="color: white; opacity: .5;">
             Informações gerais
           </button>
         </h2>
@@ -218,13 +281,13 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
             Detalhes
           </button>
         </h2>
         <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            <table class="table table-striped table-hover table table-bordered" style="width: 90%; margin-left: 5%;">
+            <table class="table table-striped table-hover table table-bordered table-primary" style="width: 90%; margin-left: 5%;">
               <thead>
                 <tr>
                   <th class="table-dark" scope="col" colspan="6" style="text-align: center;">Atribuições</th>
@@ -385,6 +448,67 @@
   </section>
 
   <footer>
+    <div class="container  text-danger">
+      <footer class="py-5">
+        <div class="row">
+          <div class="co-6 col-md-2 mb-3">
+            <h5>Cliente</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">Quem somos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">Coloboradores</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">SAC</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">Assitência técnica</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">Trabalhe conosco</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Informações</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">IP68 e IP69K</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">MIL-STD 810G</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">Termos e serviço</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">Política de privacidade</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-danger">Guia de envio</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Marcas parceiras</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://www.agmmobile.com/" target="blank" class="nav-link p-0 text-danger">AGM</a></li>
+              <li class="nav-item mb-2"><a href="https://www.blackview.hk/" target="blank" class="nav-link p-0 text-danger">Blackview</a></li>
+              <li class="nav-item mb-2"><a href="https://www.doogee.cc/" target="blank" class="nav-link p-0 text-danger">Doogee</a></li>
+              <li class="nav-item mb-2"><a href="https://hotwav.com/" target="blank" class="nav-link p-0 text-danger">Hotwav</a></li>
+              <li class="nav-item mb-2"><a href="https://www.ulefone.com/" target="blank" class="nav-link p-0 text-danger">Ulefone</a></li>
+              <li class="nav-item mb-2"><a href="https://www.umidigi.com/" target="blank" class="nav-link p-0 text-danger">Umidigi</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Deixe seu email</h5>
+              <p>Fique por dentro das novidades através de nosso email.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Adicionar email</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Adicionar email">
+                <button class="btn btn-primary" type="button">Inscrever</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <a class="redeSocial" href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+            <a class="redeSocial" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            <a class="redeSocial" href="https://youtube.com/"><i class="fa-brands fa-youtube fa-3x"></i></a>
+            <a class="redeSocial" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+          </ul>
+        </div>
+      </footer>
+    </div>
 
   </footer>
 
