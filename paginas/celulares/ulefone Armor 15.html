@@ -7,95 +7,67 @@
     <title>Ulefone Armor 15</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <style>
-      #coracao:hover {
-        color:  rgb(100, 100, 100);
-        cursor: pointer;
-      }
-      .navbar{
-        /* background-color: rgba(90, 93, 105, 0.5);*/
-        background-color: rgba(10, 110, 146, 0.66);
-      }
-      .container {
-        background-color: rgba(10, 110, 146, 0.66);
-      }
-      .navbar-brand {
-        color: red;
-      }
-      body {
-        background-color: #06181f;
-      }
-      .redeSocial {
-        color: rgb(50, 50, 50);
-        margin: 0% 1% 0% 1%;
-      }
-      .redeSocial:hover {
-        color: rgb(0, 0, 50);
-        -webkit-transform: scale(1.5);
-      }
-    </style>
-    <script>
-      function coracao() {
-        document.getElementById('coracao').style.color = "rgb(220, 0, 0)"
-      }
-    </script>
+    <link rel="stylesheet" href="../../css/style.css">
     <!-- #06181f -->
 </head>
 <body>
 
-  <header>
+  <head>
     <nav class="navbar fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"> FrontEnders</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> FrontEnders</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nossos produtos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">O que é certificaçãp IP68 e IP69K?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">O que é certificação Militar MIL-STD 810G?</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Marcas:
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">AGM</a></li>
-                  <li><a class="dropdown-item" href="#Blackview">Blackview</a></li>
-                  <li><a class="dropdown-item" href="#Doogee">Doogee</a></li>
-                  <li><a class="dropdown-item" href="#">Hotwav</a></li>
-                  <li><a class="dropdown-item" href="#">Ulefone</a></li>
-                  <li><a class="dropdown-item" href="#">Umidigi</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-            </form>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> FrontEnders</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> FrontEnders</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Nossos produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/ip68 e ip69k.html">O que é certificaçãp IP68 e IP69K?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/MIL-STD 810G.html">O que é certificação Militar MIL-STD 810G?</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marcas:
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../../index.html">AGM</a></li>
+                    <li><a class="dropdown-item" href="../../index.html">Blackview</a></li>
+                    <li><a class="dropdown-item" href="../../index.html">Doogee</a></li>
+                    <li><a class="dropdown-item" href="../../index.html">Hotwav</a></li>
+                    <li><a class="dropdown-item" href="../../index.html">Ulefone</a></li>
+                    <li><a class="dropdown-item" href="../../index.html">Umidigi</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../formulario.html">Formulário</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="#" onclick="loginIndex()">Login</a>
+                </li>
+              </ul>
+              <div id="login">
+               
+              </div>
+            </div>
+
+      
           </div>
         </div>
-      </div>
-    </nav>
-
-  </header>
+      </nav>
+  </head>
 
   <section>
     <div class="card mb- container-sm pt-5" style="width: 90%; margin: 3% 0% 3% 5%">
@@ -156,23 +128,10 @@
               <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
             </svg> 4.5
             <br>
-
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Comprar</button>
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body small">
-                ...
-              </div>
-            </div>
             
 
                         <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Comprar2
-            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comprar</button>
 
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -456,7 +415,7 @@
   </section>
 
   <footer>
-    <div class="container  text-danger">
+    <div class="container text-danger">
       <footer class="py-5">
         <div class="row">
           <div class="co-6 col-md-2 mb-3">
@@ -517,10 +476,9 @@
         </div>
       </footer>
     </div>
-
   </footer>
-
-
+  
+  <script src="../../javascript/script.js"></script>
   <script src="https://kit.fontawesome.com/913e757190.js" crossorigin="anonymous"></script>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
