@@ -10,34 +10,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- #06181f -->
-    <style>
-      .navbar{
-        /* background-color: rgba(90, 93, 105, 0.5);*/
-        background-color: rgba(10, 110, 146, 0.66);
-      }
-      .container {
-        background-color: rgba(10, 110, 146, 0.66);
-      }
-      .navbar-brand {
-        color: red;
-      }
-      body {
-        background-color: #06181f;
-      }
-      .redeSocial {
-        color: rgb(50, 50, 50);
-        margin: 0% 1% 0% 1%;
-      }
-      .redeSocial:hover {
-        color: rgb(0, 0, 50);
-        -webkit-transform: scale(1.5);
-      }
-      #rec:hover {
-        cursor: pointer;
-      }
-
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
     <head>
@@ -55,16 +28,13 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Nossos produtos</a>
+                      <a class="nav-link" href="paginas/ip68 e ip69k.html">O que é certificaçãp IP68 e IP69K?</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">O que é certificaçãp IP68 e IP69K?</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">O que é certificação Militar MIL-STD 810G?</a>
+                      <a class="nav-link" href="paginas/MIL-STD 810G.html">O que é certificação Militar MIL-STD 810G?</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,6 +48,9 @@
                         <li><a class="dropdown-item" href="#Ulefone">Ulefone</a></li>
                         <li><a class="dropdown-item" href="#Umidigi">Umidigi</a></li>
                       </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="paginas/formulario.html">Formulário</a>
                     </li>
                     <li class="nav-item">
                      <a class="nav-link" href="#" onclick="loginIndex()">Login</a>
@@ -608,49 +581,5 @@
     <script src="https://kit.fontawesome.com/913e757190.js" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script>
-      // nao esquecer de fazer o script do email o rodape
-    </script>
-    <script>
-      function loginIndex() {
-        document.getElementById('login').innerHTML = 
-         `<div>
-            <form class="px-4 py-3">
-              <div class="mb-3">
-                <label for="exampleDropdownFormEmail1" class="form-label">Email:</label>
-                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleDropdownFormPassword1" class="form-label">Senha:</label>
-                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-              </div>
-              <div class="mb-3">
-              <div class="form-check"></div>
-              <button type="submit" class="btn btn-primary">Entrar</button>
-            </form>
-            <p> </p>
-            <a id='rec' onclick="recuperarSenha1()">Recuperar Senha</a>
-          </div>`
-      }
-
-      function recuperarSenha1(){
-        document.getElementById('login').innerHTML =
-          `<div>
-            <form class="px-4 py-3">
-              <div class="mb-3">
-                <label for="exampleDropdownFormEmail1" class="form-label">Email:</label>
-                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-              </div>
-              <div class="mb-3">
-              <div class="form-check"></div>
-              <button type="submit" class="btn btn-primary" onclick='enviado()'>Enviar</button>
-            </form>
-          </div>`
-      }
-
-      function enviado() {
-        document.getElementById('login').innerText = 'Link de recuperção enviado para seu email!'
-      }
-    </script>
 </body>
 </html>
