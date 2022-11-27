@@ -13,4 +13,4 @@ Frontenders é uma plataforma de revenda de celulares com as certificações IP6
  <img align="center" alt="Will-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
 
-📌 Link do projeto no github Pages:
+📌 Link do projeto no github Pages: https://elguesabal.github.io/Trabalho-em-grupo-modulo-2/
